@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>DataForms</title>
+  </head>
+  <body>
+    <div class="container">
+      <img src="src/img/logo.png" alt="" srcset="" class="img" />
+    </div>
+    <div class="formulario">
+      <h1>Bienvenido</h1>
+      <form action="form.php" method="POST">
+        <table>
+          <tr>
+            <td>
+              <input
+                type="text"
+                name="nombre"
+                placeholder="Primer nombre"
+                autocomplete="off"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="password"
+                name="password"
+                autocomplete="off"
+                placeholder="Tu contraseña"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="genero" value="F" required /> FEMENINO
+              <input type="radio" name="genero" value="M" required /> MASCULINO
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input
+                type="email"
+                name="email"
+                autocomplete="off"
+                placeholder="correo@example.com"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select name="materia" class="seleccion">
+                <option selected hidden value="">MATERIAS...</option>
+                <option value="programacion">PROGRAMACIÓN</option>
+                <option value="calculo">CALCULO</option>
+                <option value="fisica">FISICA</option>
+                <option value="base">BASE DE DATOS</option>
+                <option value="ingsftw">INGENIERIA DE SOFTWARE</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="submit" value="REGISTRAR" /></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+  </body>
+</html>
